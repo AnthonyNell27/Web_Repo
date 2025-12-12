@@ -1,0 +1,284 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 20px 50px rgba(14, 165, 233, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.header h2 {
+  margin: 4px 0 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+p {
+  margin: 0;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: #111827;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d7dee9;
+  background: #f8fafc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primary {
+  background: #0ea5e9;
+  color: #fff;
+  border-color: #0ea5e9;
+}
+
+.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ghost {
+  background: #f9fafb;
+  border-color: #d7dee9;
+  color: #0f172a;
+}
+
+.ghost:hover {
+  background: #e0f2fe;
+  border-color: #bae6fd;
+}
+
+.hint {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #ecfeff;
+  border-radius: 10px;
+  border: 1px dashed #7dd3fc;
+  color: #0f172a;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #fecaca;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0ea5e9;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 260px;
+  overflow: auto;
+}
+
+.history-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 6px;
+  align-items: center;
+}
+
+.history-item {
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.history-item:hover {
+  border-color: #bae6fd;
+  background: #e0f2fe;
+}
+
+.history-ip {
+  font-weight: 700;
+}
+
+.history-meta {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.geo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.geo-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.info-row span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.info-row strong {
+  color: #0f172a;
+}
+
+.map {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  background: #ecfeff;
+  min-height: 320px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: none;
+}
+
+.map.empty {
+  display: grid;
+  place-items: center;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.full {
+  margin-top: 14px;
+}
+
+.small-btn {
+  padding: 8px 12px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 14px 32px;
+  }
+
+  .search-actions {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
